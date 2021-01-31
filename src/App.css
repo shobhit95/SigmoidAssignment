@@ -1,0 +1,29 @@
+#landingPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignCenter {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.inputDates {
+  border-radius: 5px !important;
+  margin: 0px 10px !important;
+}
+
+.graph1Style {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.loadingContent {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
