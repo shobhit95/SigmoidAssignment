@@ -22,7 +22,7 @@ export default class Chart2 extends React.Component {
     })
       .then((result) => result.json())
       .then((response) => {
-        response.result.data.map((res) => {
+        response.result.data.forEach((res) => {
           arr1.push(res.appSiteId);
           arr2.push(parseInt(res.impressions_offered));
         });
