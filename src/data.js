@@ -39,7 +39,7 @@ export const data2 = {
       granularity: "hour",
       timeZone: { name: "UTC (+00:00)", location: "UTC" },
       dateRange: { startDate: "1493337600000", endDate: "1493510400000" },
-      xAxis: ["D017"],
+      xAxis: ["D002"],
       yAxis: ["M002"],
       approxCountDistinct: [],
       specialCalculation: [],

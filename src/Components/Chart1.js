@@ -3,7 +3,12 @@ import { data1 } from "../data";
 import Loading from "./Loading";
 
 export default class Chart1 extends React.Component {
-  state = { chart1Response: [], startDate: "", endDate: "" };
+  state = {
+    chart1Response: [],
+    startDate: "",
+    endDate: "",
+    dataToFetch: data1,
+  };
   componentDidMount() {
     this.getData();
     this.setState({
@@ -19,7 +24,7 @@ export default class Chart1 extends React.Component {
         "Content-Type": "application/json",
         "x-auth-token": this.props.token,
       },
-      body: JSON.stringify(data1),
+      body: JSON.stringify(this.state.dataToFetch),
     })
       .then((result) => result.json())
       .then((response) =>
